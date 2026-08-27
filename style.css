@@ -1,0 +1,399 @@
+/* =====================================================
+   EpiData Solutions — Portfolio Website
+   Main Stylesheet
+   ===================================================== */
+
+
+/* ---------- Global Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f7f9fc;
+    color: #1f2937;
+}
+
+
+/* ---------- Container ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ---------- Navigation ---------- */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #12355b;
+}
+
+.logo span {
+    color: #168aad;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #168aad;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef7fb 0%,
+            #ffffff 55%,
+            #f4f9fc 100%
+        );
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.subtitle {
+    color: #168aad;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    color: #12355b;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #168aad;
+    display: block;
+}
+
+.hero-text {
+    max-width: 700px;
+    font-size: 1.15rem;
+    color: #4b5563;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn.primary {
+    background: #168aad;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: #126782;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    border: 2px solid #168aad;
+    color: #168aad;
+    background: transparent;
+}
+
+.btn.secondary:hover {
+    background: #168aad;
+    color: #ffffff;
+}
+
+
+/* ---------- General Sections ---------- */
+
+.section {
+    padding: 90px 0;
+}
+
+.section:nth-child(even) {
+    background: #ffffff;
+}
+
+.section-label {
+    color: #168aad;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #12355b;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- About ---------- */
+
+.about-text {
+    max-width: 850px;
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 18px;
+}
+
+
+/* ---------- Skills ---------- */
+
+.skills-section {
+    background: #f7f9fc;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #168aad;
+    box-shadow: 0 10px 25px rgba(18, 53, 91, 0.08);
+}
+
+.skill-card h3 {
+    color: #12355b;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #6b7280;
+}
+
+
+/* ---------- Projects ---------- */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(18, 53, 91, 0.1);
+}
+
+.project-card h3 {
+    color: #12355b;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #4b5563;
+    margin-bottom: 18px;
+}
+
+.project-card span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #168aad;
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    background: #12355b;
+    color: #ffffff;
+}
+
+.contact-section h2 {
+    color: #ffffff;
+}
+
+.contact-section p {
+    max-width: 700px;
+    color: #dbeafe;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #ffffff;
+    color: #12355b;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #0d2742;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 70px 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .nav-links {
+        font-size: 0.85rem;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
