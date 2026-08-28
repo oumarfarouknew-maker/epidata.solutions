@@ -600,3 +600,232 @@ footer p {
         text-align: center;
     }
 }
+
+```css
+/* =====================================================
+   DASHBOARD SHOWCASE
+   ===================================================== */
+
+.dashboard-section {
+    background: #ffffff;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+/* ---------- Dashboard Card ---------- */
+
+.dashboard-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(18, 53, 91, 0.12);
+
+    border-color: #168aad;
+}
+
+
+/* ---------- Dashboard Image ---------- */
+
+.dashboard-image {
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #12355b;
+
+    overflow: hidden;
+}
+
+
+/* ---------- Temporary Placeholder ---------- */
+
+.dashboard-placeholder {
+    width: 80%;
+    height: 75%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.dashboard-placeholder span {
+    color: #9fd9e8;
+
+    font-size: 0.7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.dashboard-placeholder strong {
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.dashboard-placeholder small {
+    color: #dbeafe;
+
+    font-size: 0.8rem;
+}
+
+
+/* ---------- Dashboard Content ---------- */
+
+.dashboard-content {
+    padding: 28px;
+}
+
+.dashboard-category {
+    color: #168aad;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.dashboard-content h3 {
+    color: #12355b;
+
+    font-size: 1.35rem;
+
+    margin-bottom: 12px;
+}
+
+.dashboard-content p {
+    color: #6b7280;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 18px;
+}
+
+
+/* ---------- Dashboard Tools ---------- */
+
+.dashboard-tools {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+}
+
+.dashboard-tools span {
+    background: #eef6f8;
+
+    color: #126782;
+
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+}
+
+
+/* ---------- Dashboard Actions ---------- */
+
+.dashboard-actions {
+    display: flex;
+
+    gap: 20px;
+
+    border-top: 1px solid #e5e7eb;
+
+    padding-top: 18px;
+}
+
+.dashboard-actions a {
+    text-decoration: none;
+
+    color: #12355b;
+
+    font-size: 0.85rem;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.dashboard-actions a:hover {
+    color: #168aad;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .dashboard-image {
+        height: 190px;
+    }
+
+    .dashboard-content {
+        padding: 22px;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+```
+
