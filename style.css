@@ -380,6 +380,209 @@ footer p {
         font-size: 2.5rem;
     }
 
+   ```css
+/* =====================================================
+   PROFESSIONAL PROFILE
+   ===================================================== */
+
+.profile-section {
+    background: #ffffff;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.profile-content h2 {
+    max-width: 650px;
+}
+
+.profile-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.highlight-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    background: #f7f9fc;
+
+    padding: 22px;
+
+    border-left: 4px solid #168aad;
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(18, 53, 91, 0.08);
+}
+
+.highlight-number {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #168aad;
+    letter-spacing: 1px;
+}
+
+.highlight-card h3 {
+    color: #12355b;
+    margin-bottom: 5px;
+}
+
+.highlight-card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   SKILLS INTRO
+   ===================================================== */
+
+.section-intro {
+    max-width: 750px;
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   SKILL CARDS
+   ===================================================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #168aad;
+
+    box-shadow:
+        0 12px 30px rgba(18, 53, 91, 0.10);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf6fa;
+
+    color: #168aad;
+
+    border-radius: 8px;
+
+    font-weight: 800;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 18px;
+}
+
+.skill-card h3 {
+    color: #12355b;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #6b7280;
+
+    font-size: 0.92rem;
+
+    margin-bottom: 18px;
+}
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+.skill-tags span {
+    background: #f1f5f9;
+
+    color: #475569;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   RESPONSIVE PROFILE & SKILLS
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-grid {
+        gap: 30px;
+    }
+
+    .highlight-card {
+        padding: 18px;
+    }
+}
+```
+
+
     .hero-text {
         font-size: 1rem;
     }
