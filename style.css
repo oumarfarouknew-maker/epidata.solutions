@@ -922,4 +922,200 @@ footer p {
     object-fit: cover;
     display: block;
 }
+/* =====================================================
+   EXPERIENCE
+   ===================================================== */
 
+.experience-list {
+    max-width: 950px;
+    margin: 50px auto 0;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #e2e8ee;
+}
+
+.experience-date {
+    font-weight: 700;
+    color: #168aad;
+    font-size: 0.9rem;
+}
+
+.experience-content h3 {
+    margin: 0 0 8px;
+    color: #12355b;
+}
+
+.experience-content h4 {
+    margin: 0 0 10px;
+    color: #526777;
+    font-weight: 600;
+}
+
+.experience-content p {
+    font-size: 0.85rem;
+    color: #168aad;
+    font-weight: 700;
+}
+
+.experience-content ul {
+    padding-left: 20px;
+    margin-top: 18px;
+}
+
+.experience-content li {
+    margin-bottom: 9px;
+    color: #526777;
+}
+
+
+/* =====================================================
+   EDUCATION
+   ===================================================== */
+
+.education-section {
+    background: #f6f9fb;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.education-card {
+    background: #ffffff;
+    padding: 32px;
+    border: 1px solid #e2e8ee;
+    border-radius: 10px;
+}
+
+.education-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #168aad;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    color: #12355b;
+    margin-bottom: 8px;
+}
+
+.education-card h4 {
+    color: #526777;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    color: #526777;
+}
+
+.education-card span {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #168aad;
+}
+
+
+/* =====================================================
+   CERTIFICATIONS
+   ===================================================== */
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 45px;
+}
+
+.certification-card {
+    padding: 28px;
+    border: 1px solid #e2e8ee;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(18, 53, 91, 0.10);
+}
+
+.certification-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 55px;
+    height: 38px;
+
+    padding: 0 10px;
+
+    margin-bottom: 20px;
+
+    background: #12355b;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.certification-card h3 {
+    color: #12355b;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.certification-card p {
+    color: #526777;
+    font-size: 0.85rem;
+}
+
+.certification-card span {
+    font-size: 0.75rem;
+    color: #168aad;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
