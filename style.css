@@ -1119,3 +1119,203 @@ footer p {
     }
 
 }
+
+/* =====================================================
+   CALL TO ACTION
+   ===================================================== */
+
+.cta-section {
+    padding: 90px 20px;
+    background: #12355b;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-section .section-label {
+    color: #8ed1fc;
+}
+
+.cta-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    color: #dceaf4;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #12355b;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #12355b;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact-section {
+    background: #f6f9fb;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8ee;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(18, 53, 91, 0.10);
+}
+
+.contact-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #168aad;
+}
+
+.contact-card strong {
+    color: #12355b;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.site-footer {
+    background: #0b253d;
+    color: #ffffff;
+    padding: 45px 20px 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-brand strong {
+    font-size: 1.2rem;
+}
+
+.footer-brand p {
+    color: #b9cad7;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: #dceaf4;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-bottom p {
+    color: #91a9ba;
+    font-size: 0.72rem;
+}
+
+
+/* =====================================================
+   CONTACT RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}
