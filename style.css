@@ -1575,7 +1575,322 @@ footer p {
     color: #91a9ba;
     font-size: 0.72rem;
 }
+/* =========================
+   WORK WITH ME / CONTACT
+========================= */
 
+.contact-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+
+/* =========================
+   MAIN CTA
+========================= */
+
+.contact-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 55px;
+
+    margin-bottom: 80px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+    background: rgba(128, 128, 128, 0.06);
+}
+
+
+.contact-cta-content {
+    max-width: 720px;
+}
+
+
+.contact-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    opacity: 0.65;
+}
+
+
+.contact-cta h2 {
+    margin: 0 0 18px;
+
+    font-size: clamp(34px, 5vw, 52px);
+
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+
+.contact-cta h2 span {
+    display: inline;
+}
+
+
+.contact-cta p {
+    max-width: 650px;
+
+    margin: 0 0 8px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    opacity: 0.72;
+}
+
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 16px 25px;
+
+    border-radius: 11px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+
+/* =========================
+   CONTACT GRID
+========================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+.contact-info h3 {
+    margin: 0 0 18px;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+}
+
+
+.contact-info > p {
+    max-width: 480px;
+
+    margin: 0 0 35px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    opacity: 0.7;
+}
+
+
+/* Contact Item */
+
+.contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+
+.contact-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(128, 128, 128, 0.10);
+
+    font-size: 17px;
+}
+
+
+.contact-item span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    opacity: 0.5;
+}
+
+
+.contact-item a,
+.contact-item p {
+    margin: 0;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.contact-socials {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 35px;
+}
+
+
+.contact-socials a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(128, 128, 128, 0.20);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.contact-socials a:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form-wrapper {
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(128, 128, 128, 0.18);
+
+    background: rgba(128, 128, 128, 0.04);
+}
+
+
+.contact-form {
+    width: 100%;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(128, 128, 128, 0.25);
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ea
 
 /* =====================================================
    CONTACT RESPONSIVE
