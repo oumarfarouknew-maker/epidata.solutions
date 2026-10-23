@@ -3709,3 +3709,21 @@ a.contact-info-item:hover {
 }
 
 
+/* Chad Disease Surveillance Gallery */
+.dashboard-gallery .gallery-item figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.6;
+}
+
+.dashboard-gallery .gallery-item figcaption strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.dashboard-gallery .gallery-item figcaption span {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
