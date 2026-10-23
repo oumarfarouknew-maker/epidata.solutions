@@ -3701,3 +3701,11 @@ a.contact-info-item:hover {
     opacity: 0.8;
 }
 
+.project-disclaimer {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+
